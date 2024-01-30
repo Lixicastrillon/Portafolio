@@ -1,12 +1,66 @@
 @import url("../../../index.css");
 
-.nav {
+.headerN {
+  width: 95%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+}
+
+.btn-container .bi-list {
+  font-size: 2rem;
+  background-color: #181818;
+  color: white;
+  cursor: pointer;
+}
+.btn-container .bi-x {
+  font-size: 2rem;
+  background-color: #181818;
+  color: white;
+  cursor: pointer;
+}
+/* .btn-container .bi:nth-child(2) {
+  display: none;
+} */
+
+.bi::before {
+  font-weight: 800 !important;
+  font-size: 1.4rem;
+  margin: 2px;
+}
+
+.aside {
+  width: 100%;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-.imgNav {
-  height: 10%;
-  width: 10%;
+.aside-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
+/* .logo-section {
+  min-height: 32vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #000;
+} */
+/* .logo {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+} */
 
 .buttonNav {
   background-color: var(--color-200);
