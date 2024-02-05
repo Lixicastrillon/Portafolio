@@ -1,5 +1,5 @@
 import "./NavBar.css";
-// import logo from "./logo.png";
+import logo from "./logo.png";
 const NavBar = () => {
   return (
     <div className="container-fluid">
@@ -15,33 +15,38 @@ const NavBar = () => {
         <div className="aside-wrapper">
           <div className="logo-section">
             <a className="logo" rel="home" href="#">
-              {/* <img className="imgNav" src={} alt="logo" /> */}
+              <img src={logo} alt="logo" />
               <span>Liz</span>
             </a>
-            <span>web developer</span>
+            <span>Web Developer</span>
           </div>
+
           <nav className="nav-links">
-            <a className="buttonNav" href="#">
+            <a className="" href="#">
               About me
             </a>
-            <a className="buttonNav" href="#">
+            <a className="" href="#">
               My skills
             </a>
-            <a className="buttonNav" href="#">
+            <a className="" href="#">
               Works
             </a>
-            <a className="buttonNav" href="#">
+            <a className="" href="#">
               Contact me
             </a>
           </nav>
           {/* // social icons */}
           <ul className="social-icons">
-            <a href="">
-              <i className="bi bi-linkedin"></i>
-            </a>
-            <a href="">
-              <i className="bi bi-github"></i>
-            </a>
+            <li>
+              <a href="">
+                <i className="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i className="bi bi-github"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </aside>

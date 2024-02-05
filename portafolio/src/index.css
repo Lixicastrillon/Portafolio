@@ -40,6 +40,6 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: var(--color-base);
+  background: rgb(37, 37, 37);
   color: white;
 }
