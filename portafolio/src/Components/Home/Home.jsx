@@ -10,8 +10,8 @@ const Home = () => {
             <br />
             <h1>Bienvenido a mi página web, soy Liced.</h1>
             <br />
-            <h3 className="gray-text">Web full stack developer </h3>
-            <br />
+            <h1>Web developer</h1>
+            <p className="gray-text">Front End Developer</p>
             <a href="#" className="contact-button">
               <div>
                 <span className="bg"></span>
@@ -20,14 +20,14 @@ const Home = () => {
               </div>
             </a>
           </div>
-          {/* <div className="scroll-down">
-            <span>scroll down</span>
-            <i class="bi bi-arrow-down"></i>
-          </div>
           <div className="scroll-down">
             <span>scroll down</span>
-            <i class="bi bi-arrow-dow"></i>
-          </div> */}
+            <i className="bi bi-arrow-down"></i>
+          </div>
+          <div className="scroll-down scroll-down-left">
+            <span>scroll down</span>
+            <i className="bi bi-arrow-down"></i>
+          </div>
         </section>
       </div>
     </div>
