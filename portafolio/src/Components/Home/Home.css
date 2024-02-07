@@ -78,13 +78,13 @@
 
 .scroll-down {
   position: absolute;
-  right: 30px;
+  right: -20px;
+  bottom: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   transform: rotate(90deg);
-  display: block;
   font-size: 14px;
 }
 
