@@ -11,7 +11,7 @@ const Home = () => {
             <h1>Bienvenido a mi página web, soy Liced.</h1>
             <br />
             <h1>Web developer</h1>
-            <p className="gray-text">Front End Developer</p>
+            <p className="gray-text">Full stack Developer</p>
             <a href="#" className="contact-button">
               <div>
                 <span className="bg"></span>

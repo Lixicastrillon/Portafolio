@@ -1,13 +1,22 @@
+import React, { useState } from "react";
 import "./NavBar.css";
 import logo from "./logo.png";
 const NavBar = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const handleClick = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <div className="container-fluid">
       {/* //button open and close mobile */}
       <div className="headerN">
-        <div className="btn-container">
-          <i className="bi bi-list"></i>
-          <i className="bi bi-x"></i>
+        <div
+          onClick={handleClick}
+          className={`icon nav-icon-2 ${isExpanded ? "open" : ""}`}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
       {/* // navbar */}
