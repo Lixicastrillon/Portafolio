@@ -12,14 +12,14 @@ const Home = () => {
             <br />
             <h1>Web developer</h1>
             <p className="gray-text">Full stack Developer</p>
-            <a href="#" className="contact-button">
-              <div>
-                <span className="bg"></span>
-                <span className="base"></span>
-                <span className="text">Contact me</span>
-              </div>
-            </a>
           </div>
+          <a href="#" className="contact-button">
+            <div>
+              <span className="bg"></span>
+              <span className="base"></span>
+              <span className="text">Contact me</span>
+            </div>
+          </a>
           <div className="scroll-down">
             <span>scroll down</span>
             <i className="bi bi-arrow-down"></i>

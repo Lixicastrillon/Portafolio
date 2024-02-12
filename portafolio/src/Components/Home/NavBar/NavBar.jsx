@@ -3,48 +3,28 @@ import "./NavBar.css";
 import logo from "./logo.png";
 const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  console.log(isExpanded);
   const handleClick = () => {
     setIsExpanded(!isExpanded);
   };
+  const [menu, setMenu] = useState();
   return (
-    <div className="container-fluid">
-      {/* //button open and close mobile */}
-      <div className="headerN">
-        <div
-          onClick={handleClick}
-          className={`icon nav-icon-2 ${isExpanded ? "open" : ""}`}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      {/* // navbar */}
-      <aside className="aside">
-        <div className="aside-wrapper">
-          <div className="logo-section">
-            <a className="logo" rel="home" href="#">
-              <img src={logo} alt="logo" />
-              <span>Liz</span>
-            </a>
-            <span>Web Developer</span>
-          </div>
-
-          <nav className="nav-links">
-            <a className="" href="#">
-              About me
-            </a>
-            <a className="" href="#">
-              My skills
-            </a>
-            <a className="" href="#">
-              Works
-            </a>
-            <a className="" href="#">
-              Contact me
-            </a>
-          </nav>
-          {/* // social icons */}
+    <nav className="nav-links">
+      <div className="container background">
+        <h3>Web Developer</h3>
+        <div className={`links ${isExpanded ? "active" : " "} `}>
+          <a className="" href="#">
+            About me
+          </a>
+          <a className="" href="#">
+            My skills
+          </a>
+          <a className="" href="#">
+            Works
+          </a>
+          <a className="" href="#">
+            Contact me
+          </a>
           <ul className="social-icons">
             <li>
               <a href="">
@@ -58,8 +38,17 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-      </aside>
-    </div>
+        <div
+          onClick={handleClick}
+          className={`icon nav-icon-2 ${isExpanded ? "open" : ""}`}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className={`initial ${isExpanded ? "active" : ""}`}></div>
+      </div>
+    </nav>
   );
 };
 
